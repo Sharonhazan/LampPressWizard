@@ -52,6 +52,18 @@ LampPress Wizard is a bash script that automates the installation of a secure LA
 3. When the script completes, save the displayed database credentials.
 4. Access your WordPress installation by navigating to your Raspberry Pi's IP address in a web browser.
 
+## Uninstallation
+
+If you need to remove LampPress Wizard and all associated components:
+
+1. Run the uninstall script with sudo privileges:
+   ```
+   sudo ./uninstall_lamppress_wizard.sh
+   ```
+2. Confirm that you want to proceed with the uninstallation when prompted.
+
+**Warning:** The uninstall script will remove WordPress, the LAMP stack, and revert security changes. All your WordPress files and database will be deleted. Make sure to backup any important data before running the uninstall script.
+
 ## Security Features
 
 LampPress Wizard implements the following security measures:
